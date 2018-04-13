@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="tool_bar_height">48dp</dimen>
+    <dimen name="bottom_bar_height">48dp</dimen>
+    <dimen name="def_height">48dp</dimen>
+    <dimen name="def_width">48dp</dimen>
+
+
+    <dimen name="middle">16dp</dimen>
+    <dimen name="small">12dp</dimen>
+    <dimen name="tiny">4dp</dimen>
+    <dimen name="large">20dp</dimen>
+    <dimen name="max">28dp</dimen>
+
+    <dimen name="font_tiny">12sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_middle">16sp</dimen>
+    <dimen name="font_large">20sp</dimen>
+    <dimen name="font_max">28sp</dimen>
+
+</resources>

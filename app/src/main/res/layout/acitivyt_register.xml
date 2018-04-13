@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/register_left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:padding="@dimen/middle"
+            android:src="@mipmap/ic_left_arrow"/>
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_profile"/>
+
+        <EditText
+            android:id="@+id/register_phone"
+            style="@style/register_edit_text"
+            android:hint="输入手机号码"
+            android:inputType="phone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/register_code"
+                style="@style/register_edit_text"
+                android:layout_marginTop="@dimen/middle"
+                android:layout_weight="1"
+                android:hint="验证码"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/register_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="24dp"
+                android:textSize="@dimen/small"
+                android:background="@drawable/bg_countdown_btn"
+                android:padding="@dimen/small"
+                android:text="发送验证码"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/register_pwd_1"
+            style="@style/register_edit_text"
+            android:layout_marginTop="@dimen/middle"
+            android:hint="设置密码"
+            android:inputType="textPassword"/>
+
+
+        <EditText
+            android:id="@+id/register_pwd_2"
+            style="@style/register_edit_text"
+            android:layout_marginTop="@dimen/middle"
+            android:hint="确认密码"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/register_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:layout_marginTop="@dimen/middle"
+            android:background="@drawable/bg_round_button_selector"
+            android:text="@string/confirm"
+            android:textColor="@color/while_most_color"
+            android:textSize="@dimen/font_middle"/>
+
+    </LinearLayout>
+</ScrollView>

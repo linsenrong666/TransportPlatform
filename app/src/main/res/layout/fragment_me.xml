@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/def_height"
+            android:src="@mipmap/ic_profile"/>
+
+        <TextView
+            android:id="@+id/me_user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/middle"
+            android:textSize="@dimen/font_middle"/>
+
+        <com.linsr.linlibrary.gui.widgets.LabelView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/middle"
+            app:content_image="@mipmap/ic_arrow_right_gray"
+            app:title_text="个人信息"/>
+
+        <com.linsr.linlibrary.gui.widgets.LabelView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/middle"
+            app:content_image="@mipmap/ic_arrow_right_gray"
+            app:title_text="我的收入"/>
+
+        <com.linsr.linlibrary.gui.widgets.LabelView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/middle"
+            app:content_image="@mipmap/ic_arrow_right_gray"
+            app:title_text="奖励信息"/>
+
+        <com.linsr.linlibrary.gui.widgets.LabelView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/middle"
+            app:content_image="@mipmap/ic_arrow_right_gray"
+            app:title_text="推荐有奖"/>
+
+        <com.linsr.linlibrary.gui.widgets.LabelView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/middle"
+            app:content_image="@mipmap/ic_arrow_right_gray"
+            app:title_text="帮助"/>
+
+        <Button
+            android:id="@+id/me_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/middle"
+            android:background="@drawable/bg_disable_view_selector"
+            android:text="注销"/>
+    </LinearLayout>
+</ScrollView>

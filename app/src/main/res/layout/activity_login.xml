@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/middle"
+        android:paddingRight="@dimen/middle">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="44dp"
+            android:src="@mipmap/ic_profile"/>
+
+        <EditText
+            android:id="@+id/login_phone"
+            style="@style/login_edit_text"
+            android:hint="手机号码"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            style="@style/login_edit_text"
+            android:layout_marginTop="@dimen/middle"
+            android:hint="用户密码"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/login_find_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="@dimen/middle"
+            android:text="忘记密码"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/middle"
+            android:background="@drawable/bg_round_button_selector"
+            android:text="登录"
+            android:textColor="@color/while_most_color"
+            android:textSize="@dimen/font_middle"/>
+
+        <TextView
+            android:id="@+id/login_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/middle"
+            android:text="创建账号"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+</ScrollView>

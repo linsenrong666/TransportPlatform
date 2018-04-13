@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.linsr.linlibrary.gui.widgets.TitleView
+        android:id="@+id/auth2_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        app:showLeft="true"
+        app:titleString="身份认证 2/3"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/middle">
+
+            <com.linsr.linlibrary.gui.widgets.LabelView
+                android:id="@+id/auth2_vehicle_num"
+                style="@style/auth2LabelView"
+                app:show_edit_text="true"
+                app:title_text="车牌号"/>
+
+            <com.linsr.linlibrary.gui.widgets.LabelView
+                android:id="@+id/auth2_vehicle_mode"
+                style="@style/auth2LabelView"
+                app:show_edit_text="true"
+                app:title_text="车型"/>
+
+            <com.linsr.linlibrary.gui.widgets.LabelView
+                android:id="@+id/auth2_vehicle_length"
+                style="@style/auth2LabelView"
+                app:show_edit_text="true"
+                app:edit_input_type="0x00002000"
+                app:title_text="车长"/>
+
+            <com.linsr.linlibrary.gui.widgets.LabelView
+                android:id="@+id/auth2_vehicle_load"
+                style="@style/auth2LabelView"
+                app:show_edit_text="true"
+                app:edit_input_type="0x00002000"
+                app:title_text="载重"/>
+
+            <com.linsr.linlibrary.gui.widgets.LabelView
+                android:id="@+id/auth2_vehicle_brand"
+                style="@style/auth2LabelView"
+                app:show_edit_text="true"
+                app:title_text="车辆品牌"/>
+
+            <com.linsr.linlibrary.gui.widgets.LabelView
+                android:id="@+id/auth2_vehicle_date"
+                style="@style/auth2LabelView"
+                app:hint_text="如:2018"
+                app:edit_input_type="0x00000004"
+                app:show_edit_text="true"
+                app:title_text="出厂年份"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/auth2_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_disable_view_selector"
+        android:text="完成"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/font_middle"/>
+
+</LinearLayout>

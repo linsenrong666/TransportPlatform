@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ProgressDialog">
+        <!--<item name="android:windowBackground">@color/transparent</item>-->
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+
+        <!--&lt;!&ndash;&lt;!&ndash; 设置未浮动窗口 &ndash;&gt;&ndash;&gt;-->
+        <item name="android:windowIsFloating">true</item>
+        <!--&lt;!&ndash;&lt;!&ndash; 设置无边框 &ndash;&gt;&ndash;&gt;-->
+        <item name="android:windowFrame">@null</item>
+        <!--&lt;!&ndash; 设置无标题 &ndash;&gt;-->
+        <item name="android:windowNoTitle">true</item>
+        <!--&lt;!&ndash; 设置完全透明 &ndash;&gt;-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--&lt;!&ndash; 设置屏幕变暗 &ndash;&gt;-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BaseEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_middle</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textColorHint">@color/textPrimaryWeak</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="auth2LabelView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+</resources>
